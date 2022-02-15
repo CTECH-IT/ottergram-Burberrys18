@@ -10,7 +10,7 @@
 }
 
 body {
-    background: rgb(149, 194, 215);
+    background-image: linear-gradient(to right, Aqua, DeepSkyBlue);
     font-size: 10px;
 }
 
