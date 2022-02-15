@@ -82,4 +82,17 @@ a[href="#"] {
 
 .detail-image-container {
     flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-image-frame {
+    text-align: center;
+    position: relative;
+}
+
+.detail-image-title {
+    color: white;
+    font-size: 40px;
 }
