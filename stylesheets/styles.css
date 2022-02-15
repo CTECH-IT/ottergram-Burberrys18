@@ -1,7 +1,32 @@
+body {
+    background: rgb(149, 194, 215);
+    font-size: 10px;
+}
+
 .thumbnail-title {
     background: rgb(96, 125, 139);
     color: rgb(202, 238, 255);
+    font-size: 18px;
     display: block;
     margin: 0;
     padding: 0.4em 1em;
+}
+
+a[href="#"] {
+    text-decoration: none;
+}
+
+.thumbnail-image {
+    display: block;
+    width: 100%;
+}
+
+.thumbnail-item {
+    display: block;
+    border: 1px solid rgb(100%, 100%, 100%);
+    border: 1px solid rgba(100%, 100%, 100%, 0.8);
+}
+
+.thumbnail-list {
+    list-style: none;
 }
