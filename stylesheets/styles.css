@@ -9,9 +9,33 @@
          url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');     
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-image: linear-gradient(to right, Aqua, DeepSkyBlue);
+    display: flex;
+    flex-direction: column;
     font-size: 10px;
+}
+
+.logo-text {
+    background: white;
+    font-size: 37px;
+    font-family: lakeshore;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-header {
+    flex: 0 1 auto;
+}
+
+.main-content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .thumbnail-title {
@@ -33,7 +57,8 @@ a[href="#"] {
 }
 
 .thumbnail-item {
-    display: block;
+    display: inline-block;
+    width: 120px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
@@ -45,12 +70,16 @@ a[href="#"] {
 .thumbnail-list {
     list-style: none;
     padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex: 0 1 auto;
+    order: 2;
 }
 
-.logo-text {
-    background: white;
-    font-size: 37px;
-    font-family: lakeshore;
-    text-align: center;
-    text-transform: uppercase;
+.detail-image {
+    width: 100%
+}
+
+.detail-image-container {
+    flex: 1 1 auto;
 }
