@@ -25,3 +25,27 @@ function setDetailsFromThumb(thumbnail) {
     'use strict';
     setDetails(imageFromThumb(thumbnail), titleFromThumb(thumbnail));
 }
+
+function addThumbClickHandler(thumb) {
+    'use strict';
+    thumb.addEventListener('click', function(event) {
+        event.preventDefault();
+       setDetailsFromThumb(thumb);
+    });
+}
+
+function getThumbArray() {
+    'use strict';
+    let thumbnails = document.querySelectorAll(THUMBNAIL_LINK_SELECTOR);
+    let thumbnailArray = [].slice.call(thumbnails);
+    return thumbnailArray;
+}
+
+function initializeEvent() {
+    'use strict';
+    let thumbnails = getThumbmailsArray();
+    thumbnails.forEach(addThumbClickHandler);
+}
+
+
+initializeEvents();
