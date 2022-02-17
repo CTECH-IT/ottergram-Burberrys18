@@ -6,4 +6,7 @@ function setDetails() {
     'use strict';
     let detailImage = document.querySelector(DETAIL_IMAGE_SELECTOR); 
     detailImage.setAttribute('src', 'img/otter3.jpg');
+
+    let detailTitle = document.querySelector(DETAIL_TITLE_SELECTOR);
+    detailTitle.textContent = 'Little Deuce Coop';
 }
