@@ -75,6 +75,10 @@ a[href="#"] {
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
 }
 
+.thumbnail-item:hover {
+    transform: scale(1.2);
+}
+
 .thumbnail-list {
     list-style: none;
     display: flex;
