@@ -73,16 +73,23 @@ a[href="#"] {
     max-width: 120px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
+
+    transition: transform 133ms ease-in-out;
 }
 
 .thumbnail-item:hover {
     transform: scale(1.2);
 }
 
+.is-tiny {
+    transform: scale(0.001);
+    transition: transform 0ms;
+}
+
 .thumbnail-list {
     list-style: none;
     display: flex;
-    padding: 0;
+    padding: 20px 0;
     overflow-x: auto;
     justify-content: space-between;
     white-space: nowrap;
@@ -104,6 +111,8 @@ a[href="#"] {
 .detail-image-frame {
     text-align: center;
     position: relative;
+
+    transition: transform 333ms cubic-bezier(1, 0.06, 0.28, 1);
 }
 
 .detail-image-title {
@@ -139,6 +148,7 @@ a[href="#"] {
         flex-direction: column;
         margin-left: 20px;
         order: 0;
+        padding: 0 35px;
     }
     .thumbnail-item {
         max-width: 260px;
